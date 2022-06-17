@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Grow</title>
+    <style>
+        .flex-container{
+            background:white;
+            border: 1px solid;
+            margin:10px;
+            padding:0px;
+            display: flex;
+            max-width: 600px;;
+        }
+
+        .flex-item{
+            background: blue;
+            text-align: center ;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex-Grow=0</h1>
+    <ul class="flex-container">
+        <li class="flex-item fg0">1</li>
+        <li class="flex-item fg0 ">2</li>
+        <li class="flex-item fg0">3</li>
+    </ul>
+
+    <h1>Flex-Grow=1</h1>
+    <ul class="flex-container">
+        <li class="flex-item fg1">1</li>
+        <li class="flex-item fg1">2</li>
+        <li class="flex-item fg1">3</li>
+    </ul>
+
+    <h1>Flex-Grow=2</h1>
+    <ul class="flex-container">
+        <li class="flex-item fg2">1</li>
+        <li class="flex-item fg2">2</li>
+        <li class="flex-item fg2">3</li>
+    </ul>
+
+    <h1>Flex-Grow = alternado</h1>
+    <ul class="flex-container">
+        <li class="flex-item fg2">1</li>
+        <li class="flex-item fg1">2</li>
+        <li class="flex-item fg2">3</li>
+    </ul>
+
+    
+</body>
+</html>

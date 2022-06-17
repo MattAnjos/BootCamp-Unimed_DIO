@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexDirection</title>
+    <style>
+        .flex-container{
+            background:white;
+            border: 1px solid;
+            margin:10px;
+            padding:0px;
+            display: flex;
+        }
+
+        .flex-item{
+            background: blue;
+            text-align: center ;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .row{
+            flex-direction: row;
+        }
+
+        .reverse-row{
+            flex-direction:row-reverse
+        }
+
+        .reverse-row li{
+            background: red;
+        }
+
+        .collum{
+            flex-direction: column;
+            float: left;
+        }
+
+        .collum li{
+            background: orange;
+        }
+
+        .collum-reverse{
+            flex-direction:column-reverse;
+            float: right;
+        }
+
+        .collum-reverse li{
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <ul class="flex-container row">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+    </ul>
+
+    <ul class="flex-container reverse-row">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+    </ul>
+
+    <ul class="flex-container collum">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+    </ul>
+
+    <ul class="flex-container collum-reverse">
+        <li class="flex-item">1</li>
+        <li class="flex-item">2</li>
+        <li class="flex-item">3</li>
+    </ul>
+</body>
+</html>

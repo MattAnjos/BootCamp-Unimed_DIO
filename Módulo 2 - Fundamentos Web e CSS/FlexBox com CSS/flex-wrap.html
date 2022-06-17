@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+
+    <Style>
+
+
+        .flex-container{
+            display: flex;
+            height:150px;
+            max-width:300px;
+            border: 2px solid;
+        }
+
+        .item{
+            height:50%;
+            min-width:100px;
+            text-align:center;
+            font-size: 24px;
+            line-height: 75px;
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        .orange{
+            background-color: orange;
+        }
+
+        .silver{
+            background-color: silver;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+        
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .reversewrap{
+            flex-wrap:wrap-reverse;
+        }
+    </Style>
+</head>
+<body>
+    <h1>NoWrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item green">1</div>
+        <div class="item silver">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">4</div>
+    </div>
+
+    <h1>Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item green">1</div>
+        <div class="item silver">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">4</div>
+    </div>
+
+    <h1>Wrap-Reverse</h1>
+    <div class="flex-container reversewrap">
+        <div class="item green">1</div>
+        <div class="item silver">2</div>
+        <div class="item orange">3</div>
+        <div class="item green">4</div>
+    </div>
+    
+</body>
+</html>

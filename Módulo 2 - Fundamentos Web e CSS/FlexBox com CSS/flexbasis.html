@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Basis</title>
+    <style>
+        .flex-container{
+            background:white;
+            border: 1px solid;
+            margin:10px;
+            padding:0px;
+            display: flex;
+            max-width: 800px;;
+        }
+
+        .flex-item{
+            background: blue;
+            text-align: center ;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .fg0{
+            flex-grow: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+
+        .fg2{
+            flex-grow: 2;
+        }
+
+        .b0{
+            flex-basis: 0;
+        }
+
+        .b100{
+            flex-basis: 100px;
+        }
+
+        .bauto{
+            flex-basis: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex-Basis=0</h1>
+    <ul class="flex-container">
+        <li class="flex-item b0">1</li>
+        <li class="flex-item b0">2</li>
+        <li class="flex-item b0">3</li>
+    </ul>
+
+    <h1>Flex-Basis=auto</h1>
+    <ul class="flex-container">
+        <li class="flex-item bauto">1</li>
+        <li class="flex-item bauto">2</li>
+        <li class="flex-item bauto">3</li>
+    </ul>
+
+    <h1>Flex-Basis=100</h1>
+    <ul class="flex-container">
+        <li class="flex-item b100">1</li>
+        <li class="flex-item b100">2</li>
+        <li class="flex-item b100">3</li>
+    </ul>
+
+    <h1>Flex-Basis=0 + fg1</h1>
+    <ul class="flex-container">
+        <li class="flex-item b0 fg1">1</li>
+        <li class="flex-item b0 fg1">2</li>
+        <li class="flex-item b0 fg1">3</li>
+    </ul>
+
+    <h1>Flex-Basis=auto + fg1</h1>
+    <ul class="flex-container">
+        <li class="flex-item bauto fg1">1</li>
+        <li class="flex-item bauto fg1">2</li>
+        <li class="flex-item bauto fg1">3</li>
+    </ul>
+
+    
+</body>
+</html>
